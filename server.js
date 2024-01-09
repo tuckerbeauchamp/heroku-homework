@@ -1,4 +1,5 @@
 const express = require("express");
+// process env PORT tells our app to listen on the port heroku defines
 const PORT = process.env.PORT || 8080;
 
 const app = express();
