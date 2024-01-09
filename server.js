@@ -4,6 +4,10 @@ const PORT = process.env.PORT || 8080;
 
 const app = express();
 
+app.get("/", function (req, res) {
+  res.send("Welcome to my app, please enjoy your time here");
+});
+
 app.get("*", function (req, res) {
   res.send("This is my app, muahahahaha:)");
 });
